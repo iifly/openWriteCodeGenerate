@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<body>
+    <label>blogId：</label><input id="blogId" type="text" value="55555-xxxxxxxxxx-xxx" />
+    <button onclick="looklook()">看看验证码</button><br/>
+    <cite>Tip:查看网页源代码直接搜索 'blogId' </cite>
+</body>
+<script>
+    function looklook() {
+        var blogId = document.querySelector("#blogId").value
+        var elA = document.createElement('a')
+        elA.href = "https://readmore.openwrite.cn/code/generate?blogId=" + blogId
+        elA.click()
+        elA.remove()
+    }
+</script>
+</html>
